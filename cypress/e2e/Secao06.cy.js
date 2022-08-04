@@ -2,9 +2,6 @@
 
 
 describe('Central de Atendimento ao Cliente TAT', function() {
-    beforeEach(function() {
-        cy.visit('./src/index.html')
-    })
     it('marca ambos checkboxes, depois desmarca o último', function(){
         cy.get('#email-checkbox').check()
         cy.get('#phone-checkbox').check()

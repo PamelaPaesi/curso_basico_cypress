@@ -2,10 +2,7 @@
 
 
 describe('Central de Atendimento ao Cliente TAT', function() {
-    beforeEach(function() {
-        cy.visit('./src/index.html')
-    })
-
+    
     it('seleciona um arquivo da pasta fixtures', function(){
         cy.get('input[type="file"]')
         .selectFile('cypress/fixtures/example.json')

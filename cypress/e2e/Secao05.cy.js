@@ -2,9 +2,6 @@
 
 
 describe('Central de Atendimento ao Cliente TAT', function() {
-    beforeEach(function() {
-        cy.visit('./src/index.html')
-    })
     it('marca o tipo de atendimento "Feedback', function(){
         cy.get('#firstName').type('Pâmela')
         cy.get('#lastName').type('Paesi')
