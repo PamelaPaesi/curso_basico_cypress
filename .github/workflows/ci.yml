@@ -12,4 +12,4 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           build: npm install
-          run: npm run cy:run
+          start: npm run cy:run
