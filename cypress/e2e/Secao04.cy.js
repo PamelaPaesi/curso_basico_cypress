@@ -1,6 +1,7 @@
 /// <reference types="Cypress" />
 
 describe('Central de Atendimento ao Cliente TAT', function() {
+    cy.visit('./src/index.html')
     it('seleciona um produto (YouTube) por seu texto', function(){
         cy.get('#firstName').type('Pâmela')
         cy.get('#lastName').type('Paesi')
